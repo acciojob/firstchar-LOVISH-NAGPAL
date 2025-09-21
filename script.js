@@ -5,7 +5,7 @@ if(text[i]!=" "){
 	return text[i]
 }
 }
-	return " "
+	return ""
 }
 
 // Do not change the code below
