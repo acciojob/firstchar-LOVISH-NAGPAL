@@ -1,16 +1,16 @@
 function firstChar(text) {
   // your code here
 for(let i=0;i<text.length;i++){
-if(text[i]===" "){
+if(text[i]===" " && i<text.length-1){
 
-	
+	continue
 }
-if(text[i]){
+if(text[i]!==" "){
 	return text[i]
 }
 
 	
-	if(i===text.length-1 && text[i]===""){
+	if(i===text.length-1 && text[i]===" "){
 		return " "
 	}
 
@@ -21,5 +21,5 @@ if(text[i]){
 
 // Do not change the code below
 //Uncomment the following line to show the prompt popup
-const text = prompt("Enter text:");
+// const text = prompt("Enter text:");
 alert(firstChar(text));
